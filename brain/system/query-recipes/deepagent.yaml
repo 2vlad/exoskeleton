@@ -1,0 +1,32 @@
+# DeepAgent is for DISCOVERY ONLY.
+# Results are ALWAYS marked as candidate confidence until corroborated.
+
+recipes:
+  broad_context:
+    description: "Get broad internal context on a topic (discovery only)"
+    primary_tool: deepagent.generate_answer
+    args_template:
+      message: "{query}"
+    validate:
+      require_fields: []
+    post_process:
+      confidence: candidate
+      requires_corroboration: true
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  candidate_issues:
+    description: "Ask DeepAgent to find potentially related issues (must verify via tracker)"
+    primary_tool: deepagent.generate_answer
+    args_template:
+      message: "Find tracker issues related to: {topic}. Return only issue keys (e.g. PROJ-123), one per line."
+    validate:
+      require_fields: []
+    post_process:
+      confidence: candidate
+      requires_corroboration: true
+      corroborate_via: tracker.GetIssue
+    calibrated: false
+    last_successful_call: null
+    example_response: null

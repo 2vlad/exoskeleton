@@ -1,0 +1,75 @@
+recipes:
+  my_open_issues:
+    description: "Find current user's open issues in default queues"
+    primary_tool: tracker.GetIssues
+    args_template:
+      filter:
+        assignee: "{tracker_login}"
+        status:
+          - open
+          - inProgress
+          - needInfo
+      order: "-updated"
+      limit: 100
+    fallbacks:
+      - tool: intrasearch.stsearch
+        args_template:
+          query: "assignee:{tracker_login} status:open"
+          limit: 50
+    validate:
+      min_records: 0
+      require_fields: [key, summary, status]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  get_issue_by_key:
+    description: "Fetch a single issue by its key"
+    primary_tool: tracker.GetIssue
+    args_template:
+      issue_key: "{issue_key}"
+    fallbacks:
+      - tool: intrasearch.stsearch
+        args_template:
+          query: "{issue_key}"
+          limit: 5
+    validate:
+      require_fields: [key, summary, status, assignee]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  recently_updated_issues:
+    description: "Find recently updated issues in user's queues"
+    primary_tool: tracker.GetIssues
+    args_template:
+      filter:
+        queue: "{default_queues}"
+        updated_from: "{since_date}"
+      order: "-updated"
+      limit: 50
+    fallbacks:
+      - tool: intrasearch.stsearch
+        args_template:
+          query: "queue:{default_queues_joined} updated:>{since_date}"
+    validate:
+      require_fields: [key, summary, status, updatedAt]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  search_goals_projects:
+    description: "Search for goals, projects, portfolios"
+    primary_tool: tracker.SearchEntities
+    args_template:
+      query: "{search_query}"
+      entity_type: "{entity_type}"
+    fallbacks:
+      - tool: intrasearch.stsearch
+        args_template:
+          query: "{search_query} type:goal OR type:project"
+    validate:
+      require_fields: [key, summary]
+    calibrated: false
+    last_successful_call: null
+    example_response: null

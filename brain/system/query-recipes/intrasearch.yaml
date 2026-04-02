@@ -1,0 +1,36 @@
+recipes:
+  doc_search:
+    description: "Search wiki/docs for a topic"
+    primary_tool: intrasearch.search
+    args_template:
+      query: "{topic}"
+      limit: 20
+    validate:
+      require_fields: [title, url, snippet]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  tracker_text_search:
+    description: "Full-text search across tracker issues"
+    primary_tool: intrasearch.stsearch
+    args_template:
+      query: "{query}"
+      limit: 30
+    validate:
+      require_fields: [key, title, snippet]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  so_search:
+    description: "Search internal StackOverflow"
+    primary_tool: intrasearch.sosearch
+    args_template:
+      query: "{query}"
+      limit: 10
+    validate:
+      require_fields: [title, url, snippet]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
