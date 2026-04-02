@@ -3,9 +3,18 @@ __pycache__/
 .venv/
 *.egg-info/
 dist/
+.pytest_cache/
+
+# MCP config contains local paths and tokens — never commit
 .mcp.json
+
+# Sync artifacts — raw data from MCP tools, may contain sensitive info
 brain/ingest/raw/*.json
 brain/ingest/raw/*.jsonl
 brain/ingest/normalized/*.json
 brain/ingest/normalized/*.jsonl
 brain/ingest/failed/*.json
+brain/ingest/failed/*.jsonl
+
+# OS
+.DS_Store
