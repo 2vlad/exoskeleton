@@ -1,0 +1,10 @@
+{
+  "broad_context": {
+    "message": "Tell me about the onboarding project at Practicum",
+    "response": "The onboarding project at Practicum is focused on reducing time-to-value for new students. Key people involved include Vlad Kiaune (PM), Sergey Suslov (design lead), and Anna Koroleva (data analyst). There are several related tickets in the PM queue, including PM-123 for the main implementation and LUMI-78 for launch readiness. The project started in Q1 2026 and targets completion by end of Q2. Recent decisions include switching from a wizard-style flow to a progressive disclosure model."
+  },
+  "candidate_issues": {
+    "message": "Find tracker issues related to onboarding. Return only issue keys.",
+    "response": "PM-123\nPM-456\nPM-100\nLUMI-78\nPRACT-500\nONBOARD-12"
+  }
+}

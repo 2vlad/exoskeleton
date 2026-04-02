@@ -1,0 +1,55 @@
+{
+  "normal": [
+    {
+      "key": "PM-123",
+      "summary": "Implement onboarding flow for new users",
+      "status": { "key": "inProgress", "display": "In Progress" },
+      "assignee": { "id": "vladk", "display": "Vlad Kiaune" },
+      "reporter": { "id": "sergey-sus", "display": "Sergey Suslov" },
+      "queue": { "key": "PM", "display": "Product Management" },
+      "priority": { "key": "normal", "display": "Normal" },
+      "updatedAt": "2026-04-01T10:30:00.000+0000",
+      "createdAt": "2026-03-15T08:00:00.000+0000"
+    },
+    {
+      "key": "PM-456",
+      "summary": "Define success metrics for retention experiment",
+      "status": { "key": "open", "display": "Open" },
+      "assignee": { "id": "vladk", "display": "Vlad Kiaune" },
+      "reporter": { "id": "anna-k", "display": "Anna Koroleva" },
+      "queue": { "key": "PM", "display": "Product Management" },
+      "priority": { "key": "critical", "display": "Critical" },
+      "updatedAt": "2026-04-02T09:00:00.000+0000",
+      "createdAt": "2026-03-28T12:00:00.000+0000"
+    },
+    {
+      "key": "LUMI-78",
+      "summary": "Launch readiness review for LUMI v2",
+      "status": { "key": "open", "display": "Open" },
+      "assignee": { "id": "vladk", "display": "Vlad Kiaune" },
+      "reporter": { "id": "vladk", "display": "Vlad Kiaune" },
+      "queue": { "key": "LUMI", "display": "LUMI" },
+      "priority": { "key": "high", "display": "High" },
+      "updatedAt": "2026-03-30T16:00:00.000+0000",
+      "createdAt": "2026-03-20T09:00:00.000+0000"
+    }
+  ],
+  "single": {
+    "key": "PM-123",
+    "summary": "Implement onboarding flow for new users",
+    "description": "Full description of the onboarding task with requirements and acceptance criteria.",
+    "status": { "key": "inProgress", "display": "In Progress" },
+    "assignee": { "id": "vladk", "display": "Vlad Kiaune" },
+    "reporter": { "id": "sergey-sus", "display": "Sergey Suslov" },
+    "queue": { "key": "PM", "display": "Product Management" },
+    "priority": { "key": "normal", "display": "Normal" },
+    "followers": [{ "id": "anna-k" }],
+    "tags": ["onboarding", "q2"],
+    "updatedAt": "2026-04-01T10:30:00.000+0000",
+    "createdAt": "2026-03-15T08:00:00.000+0000",
+    "components": [],
+    "links": [
+      { "type": "relates", "issue": { "key": "LUMI-78" } }
+    ]
+  }
+}

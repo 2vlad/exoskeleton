@@ -1,0 +1,29 @@
+{
+  "empty_list": [],
+  "null_response": null,
+  "malformed_issue": {
+    "key": "PM-999",
+    "summary": null,
+    "status": "unknown_status_value"
+  },
+  "missing_required_fields": {
+    "key": "PM-888"
+  },
+  "timeout_error": {
+    "error": "Request timed out after 30000ms",
+    "code": "TIMEOUT"
+  },
+  "partial_list": [
+    {
+      "key": "PM-123",
+      "summary": "Valid issue",
+      "status": { "key": "open", "display": "Open" },
+      "assignee": { "id": "vladk", "display": "Vlad" },
+      "queue": { "key": "PM" }
+    },
+    {
+      "key": null,
+      "summary": "Broken issue with null key"
+    }
+  ]
+}

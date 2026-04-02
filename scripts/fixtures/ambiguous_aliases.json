@@ -1,0 +1,16 @@
+{
+  "person_collision": {
+    "raw_text": "Sergey",
+    "candidates": [
+      { "id": "person:sergey-sus", "name": "Sergey Suslov", "team": "design" },
+      { "id": "person:sergey-iv", "name": "Sergey Ivanov", "team": "backend" }
+    ]
+  },
+  "project_collision": {
+    "raw_text": "navigator",
+    "candidates": [
+      { "id": "project:career-navi", "name": "Career Navigator" },
+      { "id": "project:navi-app", "name": "Navigator App" }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "doc_results": [
+    {
+      "title": "Onboarding Flow Design Doc",
+      "url": "https://wiki.yandex-team.ru/practicum/onboarding-v2/",
+      "snippet": "The new onboarding flow reduces time-to-value from 14 days to 3 days...",
+      "source": "wiki",
+      "relevance": 0.95
+    },
+    {
+      "title": "Retention Metrics Dashboard",
+      "url": "https://wiki.yandex-team.ru/practicum/metrics/retention/",
+      "snippet": "Key retention metrics: D1, D7, D30 retention rates broken by cohort...",
+      "source": "wiki",
+      "relevance": 0.82
+    }
+  ],
+  "tracker_text_results": [
+    {
+      "key": "PM-100",
+      "title": "Research: user drop-off in onboarding",
+      "snippet": "Analysis shows 40% drop-off at step 3 of the current flow...",
+      "url": "https://tracker.yandex-team.ru/PM-100"
+    }
+  ]
+}
