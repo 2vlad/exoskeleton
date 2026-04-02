@@ -11,14 +11,6 @@
     "deepagent": {
       "command": ".venv/bin/python3",
       "args": ["mcp_proxy.py", "-F", "~/.arc/token", "--endpoint", "mcp.yandex.net/ws?servers=deepagent"]
-    },
-    "yt": {
-      "command": ".venv/bin/python3",
-      "args": ["mcp_proxy.py", "-F", "~/.yt/token", "--endpoint", "mcp.yandex.net/ws?servers=yt"]
-    },
-    "infractl": {
-      "command": ".venv/bin/python3",
-      "args": ["mcp_proxy.py", "-F", "~/.arc/token", "--endpoint", "mcp.yandex.net/ws?servers=infractl"]
     }
   }
 }
