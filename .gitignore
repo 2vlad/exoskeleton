@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+dist/
+.mcp.json
+brain/ingest/raw/*.json
+brain/ingest/raw/*.jsonl
+brain/ingest/normalized/*.json
+brain/ingest/normalized/*.jsonl
+brain/ingest/failed/*.json

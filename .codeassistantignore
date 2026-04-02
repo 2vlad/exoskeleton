@@ -1,0 +1,6 @@
+brain/ingest/raw/
+brain/ingest/normalized/
+brain/ingest/failed/
+__pycache__/
+.venv/
+*.pyc
