@@ -32,18 +32,17 @@ brain/
 
 ## Быстрый старт
 
-Подробная инструкция — в [SETUP.md](SETUP.md). Коротко:
+```bash
+git clone https://github.com/2vlad/exoskeleton.git pm-copilot
+cd pm-copilot
+./setup.sh
+```
 
-1. Клонируйте репозиторий
-2. Создайте `.venv` и установите зависимости
-3. Скопируйте `.mcp.json.example` → `.mcp.json`
-4. Заполните `brain/system/identities.yaml` своими данными
-5. Запустите `/tool-calibrate` в Code Assistant
-6. Готово — попробуйте `/my-work`
+Скрипт спросит ваш логин, команду и очереди трекера — и всё настроит. После этого откройте папку в VS Code и попробуйте `/my-work`.
+
+Подробнее — в [SETUP.md](SETUP.md).
 
 ## Требования
 
-- VS Code + SourceCraft Code Assistant
-- Доступ к корпоративной сети
-- Токен `~/.arc/token`
+- VS Code + Yandex Code Assistant
 - Доступ через IDM к MCP-серверам: tracker, intrasearch, deepagent
