@@ -1,0 +1,9 @@
+# Current user identity across systems.
+# Fill in your actual values before first use.
+user:
+  display_name: ""
+  tracker_login: ""
+  email: ""
+  staff_login: ""
+  teams: []
+  default_queues: []

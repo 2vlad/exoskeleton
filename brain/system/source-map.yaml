@@ -1,0 +1,23 @@
+# Defines which source is authoritative for which class of fact.
+# The agent MUST consult this before choosing a tool.
+
+authority:
+  issue_status: tracker
+  issue_assignee: tracker
+  issue_history: tracker
+  project_goal_meta: tracker
+  document_snippets: intrasearch
+  wiki_content: intrasearch
+  broad_internal_context: deepagent
+  data_schema: yt
+  data_path_existence: yt
+  infra_ownership: infractl
+  infra_namespace: infractl
+
+trust_order:
+  - tracker
+  - yt
+  - infractl
+  - intrasearch
+  - deepagent
+  - manual

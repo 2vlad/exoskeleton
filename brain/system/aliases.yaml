@@ -1,0 +1,7 @@
+# Aliases for projects, people, queues, common abbreviations.
+# Used by entity_resolver.py for deterministic name matching.
+
+projects: {}
+people: {}
+queues: {}
+abbreviations: {}
