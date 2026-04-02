@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Relation",
+  "type": "object",
+  "required": ["id", "source", "kind", "from_ref", "to_ref", "relation_type", "dedupe_key"],
+  "properties": {
+    "id": { "type": "string" },
+    "source": { "type": "string" },
+    "kind": { "type": "string", "const": "relation" },
+    "from_ref": { "type": "string" },
+    "to_ref": { "type": "string" },
+    "relation_type": { "type": "string", "enum": ["belongs_to", "assigned_to", "authored_by", "related_to", "depends_on", "mentions"] },
+    "dedupe_key": { "type": "string" },
+    "fetched_at": { "type": "string", "format": "date-time" },
+    "payload": { "type": "object" }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Note",
+  "type": "object",
+  "required": ["id", "source", "kind", "text", "dedupe_key", "fetched_at"],
+  "properties": {
+    "id": { "type": "string" },
+    "source": { "type": "string" },
+    "source_type": { "type": ["string", "null"] },
+    "source_ref": { "type": ["string", "null"] },
+    "kind": { "type": "string", "const": "note" },
+    "text": { "type": "string", "minLength": 1 },
+    "entity_refs": { "type": "array", "items": { "type": "string" } },
+    "dedupe_key": { "type": "string" },
+    "confidence": { "type": "string", "enum": ["canonical", "corroborated", "candidate"] },
+    "fetched_at": { "type": "string", "format": "date-time" },
+    "payload": { "type": "object" }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Issue",
+  "type": "object",
+  "required": ["id", "source", "source_ref", "kind", "key", "summary", "status", "dedupe_key", "fetched_at"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^tracker:.+" },
+    "source": { "type": "string", "enum": ["tracker", "intrasearch", "deepagent"] },
+    "source_type": { "type": "string", "const": "issue" },
+    "source_ref": { "type": "string" },
+    "kind": { "type": "string", "const": "issue" },
+    "key": { "type": "string", "pattern": "^[A-Z][A-Z0-9]+-\\d+$" },
+    "summary": { "type": "string", "minLength": 1 },
+    "status": { "type": "string" },
+    "assignee": { "type": ["string", "null"] },
+    "reporter": { "type": ["string", "null"] },
+    "queue": { "type": ["string", "null"] },
+    "priority": { "type": ["string", "null"] },
+    "updated_at": { "type": ["string", "null"], "format": "date-time" },
+    "created_at": { "type": ["string", "null"], "format": "date-time" },
+    "resolved_at": { "type": ["string", "null"], "format": "date-time" },
+    "entity_refs": { "type": "array", "items": { "type": "string" } },
+    "dedupe_key": { "type": "string" },
+    "confidence": { "type": "string", "enum": ["canonical", "corroborated", "candidate"] },
+    "fetched_at": { "type": "string", "format": "date-time" },
+    "observed_at": { "type": ["string", "null"], "format": "date-time" },
+    "payload": { "type": "object" }
+  },
+  "additionalProperties": false
+}
