@@ -51,7 +51,7 @@ def rebuild_active_view(brain_dir: Path) -> str:
         lines.append("")
 
     active_issues = [i for i in issues if i.get("status") not in ("closed", "resolved", "cancelled")]
-    active_issues.sort(key=lambda x: (x.get("queue", ""), x.get("priority", "zzz")))
+    active_issues.sort(key=lambda x: (x.get("queue") or "", x.get("priority") or "zzz"))
 
     lines.append("## My Issues")
     lines.append("")

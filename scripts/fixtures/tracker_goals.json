@@ -1,0 +1,29 @@
+{
+  "goals": [
+    {
+      "key": "GOAL-1",
+      "summary": "Grow ecosystem revenue 3x (2026)",
+      "type": "goal",
+      "status": { "key": "inProgress", "display": "In Progress" },
+      "queue": { "key": "PM" },
+      "parent": null,
+      "children": [
+        { "key": "GOAL-10", "summary": "Q2: Launch 2 new services" }
+      ],
+      "progress": 25
+    },
+    {
+      "key": "GOAL-10",
+      "summary": "Q2: Launch 2 new services",
+      "type": "goal",
+      "status": { "key": "inProgress", "display": "In Progress" },
+      "queue": { "key": "PM" },
+      "parent": { "key": "GOAL-1" },
+      "children": [
+        { "key": "PM-123", "summary": "Implement onboarding flow for new users" },
+        { "key": "PM-456", "summary": "Define success metrics for retention experiment" }
+      ],
+      "progress": 40
+    }
+  ]
+}

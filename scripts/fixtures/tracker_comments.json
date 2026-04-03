@@ -1,0 +1,25 @@
+{
+  "PM-123": [
+    {
+      "id": 100501,
+      "text": "We decided to use progressive onboarding instead of a single wizard. @anna-k will prepare mockups by 2026-04-10.",
+      "createdAt": "2026-03-28T14:30:00.000+0000",
+      "createdBy": { "id": "sergey-sus", "display": "Sergey Suslov" }
+    },
+    {
+      "id": 100502,
+      "text": "Mockups ready: https://wiki.yandex-team.ru/practicum/onboarding-mockups/. Looks good, moving to dev.",
+      "createdAt": "2026-04-01T09:15:00.000+0000",
+      "createdBy": { "id": "anna-k", "display": "Anna Koroleva" }
+    }
+  ],
+  "PM-456": [
+    {
+      "id": 100601,
+      "text": "Need to align on D7 vs D30 as primary metric. Let's discuss at Thursday sync.",
+      "createdAt": "2026-04-02T11:00:00.000+0000",
+      "createdBy": { "id": "vladk", "display": "Vlad Kiaune" }
+    }
+  ],
+  "LUMI-78": []
+}

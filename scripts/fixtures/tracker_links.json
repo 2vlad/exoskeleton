@@ -1,0 +1,28 @@
+{
+  "PM-123": [
+    {
+      "direction": "outward",
+      "type": { "id": "relates", "display": "Relates" },
+      "issue": { "key": "LUMI-78", "summary": "Launch readiness review for LUMI v2", "status": { "key": "open" } }
+    },
+    {
+      "direction": "outward",
+      "type": { "id": "depends", "display": "Depends on" },
+      "issue": { "key": "PM-456", "summary": "Define success metrics for retention experiment", "status": { "key": "open" } }
+    }
+  ],
+  "PM-456": [
+    {
+      "direction": "inward",
+      "type": { "id": "depends", "display": "Is dependency of" },
+      "issue": { "key": "PM-123", "summary": "Implement onboarding flow for new users", "status": { "key": "inProgress" } }
+    }
+  ],
+  "LUMI-78": [
+    {
+      "direction": "inward",
+      "type": { "id": "relates", "display": "Relates" },
+      "issue": { "key": "PM-123", "summary": "Implement onboarding flow for new users", "status": { "key": "inProgress" } }
+    }
+  ]
+}

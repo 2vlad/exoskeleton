@@ -31,6 +31,30 @@ def deepagent_fixtures():
 
 
 @pytest.fixture
+def tracker_comments_fixtures():
+    with open(FIXTURES_DIR / "tracker_comments.json") as f:
+        return json.load(f)
+
+
+@pytest.fixture
+def tracker_links_fixtures():
+    with open(FIXTURES_DIR / "tracker_links.json") as f:
+        return json.load(f)
+
+
+@pytest.fixture
+def tracker_goals_fixtures():
+    with open(FIXTURES_DIR / "tracker_goals.json") as f:
+        return json.load(f)
+
+
+@pytest.fixture
+def calendar_fixtures():
+    with open(FIXTURES_DIR / "calendar_events.json") as f:
+        return json.load(f)
+
+
+@pytest.fixture
 def broken_fixtures():
     with open(FIXTURES_DIR / "broken_responses.json") as f:
         return json.load(f)

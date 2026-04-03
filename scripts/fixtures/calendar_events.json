@@ -1,0 +1,27 @@
+{
+  "events": [
+    {
+      "id": "evt-001",
+      "name": "Weekly Product Sync",
+      "start": "2026-04-03T10:00:00+03:00",
+      "end": "2026-04-03T10:30:00+03:00",
+      "attendees": [
+        { "login": "vladk", "name": "Vlad Kiaune" },
+        { "login": "sergey-sus", "name": "Sergey Suslov" },
+        { "login": "anna-k", "name": "Anna Koroleva" }
+      ],
+      "description": "Weekly sync on product initiatives"
+    },
+    {
+      "id": "evt-002",
+      "name": "1:1 with Ника Кышова",
+      "start": "2026-04-03T14:00:00+03:00",
+      "end": "2026-04-03T14:30:00+03:00",
+      "attendees": [
+        { "login": "vladk", "name": "Vlad Kiaune" },
+        { "login": "nika-k", "name": "Ника Кышова" }
+      ],
+      "description": ""
+    }
+  ]
+}
