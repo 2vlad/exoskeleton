@@ -14,6 +14,7 @@ and mark recipes as calibrated. Without calibration, the system operates blind.
 ## Steps
 
 1. Read `brain/system/identities.yaml` — need user identity for template substitution.
+   - If `tracker_login` is empty → run first-run auto-setup (see AGENTS.md), then continue.
 2. Read the relevant recipe file(s) from `brain/system/query-recipes/`.
 3. For each recipe:
    a. Substitute template variables from identities.

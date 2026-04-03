@@ -8,6 +8,7 @@ argument-hint: Optional queue filter (e.g., PM, LUMI)
 ## Steps
 
 1. Read `brain/system/identities.yaml` to get `tracker_login` and `default_queues`.
+   - If `tracker_login` is empty → run first-run auto-setup (see AGENTS.md), then continue.
 2. Read `brain/system/query-recipes/tracker.yaml` recipe `my_open_issues`.
 3. If recipe is not calibrated, warn the user and suggest `/tool-calibrate` first.
 4. Execute the recipe:

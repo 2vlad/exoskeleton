@@ -6,11 +6,12 @@ description: Daily brief — what to focus on, risks, stale commitments
 
 ## Steps
 
-1. Read `brain/views/active.md`.
-2. Read `brain/control/week.md`.
-3. Read `brain/control/role.md`.
-4. Check `brain/state/quality_report.json` — note any stale sources.
-5. Read `brain/ledger/commitments.jsonl` — flag any where `due_date` is within 7 days or past.
+1. Read `brain/system/identities.yaml` — if `tracker_login` is empty → run first-run auto-setup (see AGENTS.md).
+2. Read `brain/views/active.md`.
+3. Read `brain/control/week.md`.
+4. Read `brain/control/role.md`.
+5. Check `brain/state/quality_report.json` — note any stale sources.
+6. Read `brain/ledger/commitments.jsonl` — flag any where `due_date` is within 7 days or past.
 
 ## Output format
 

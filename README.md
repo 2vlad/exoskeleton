@@ -35,14 +35,14 @@ brain/
 ```bash
 git clone https://github.com/2vlad/exoskeleton.git
 cd exoskeleton
-./setup.sh
 ```
 
-Скрипт спросит ваш логин, команду и очереди трекера — и всё настроит. После этого откройте папку в VS Code и попробуйте `/my-work`.
+Откройте папку в VS Code с Yandex Code Assistant и запустите `/my-work`. При первом запуске ассистент автоматически определит вас по логину через Staff API, спросит команду и очереди трекера — и начнёт работу. Никакой ручной настройки.
 
 Подробнее — в [SETUP.md](SETUP.md).
 
 ## Требования
 
 - VS Code + Yandex Code Assistant
+- Токен `~/.arc/token` (если нет — `arc auth`)
 - Доступ через IDM к MCP-серверам: tracker, intrasearch, deepagent
