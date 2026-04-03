@@ -33,5 +33,5 @@ Last sync timestamps per source. Warn if any source is >24h stale.
 
 ## Rules
 - Do NOT run any sync. This command only reads existing brain data.
-- If data is stale, suggest running `/my-work` or `/sync-daily` first.
+- If data is stale, suggest running `/sync` first.
 - Always mention which sources are degraded, if any.

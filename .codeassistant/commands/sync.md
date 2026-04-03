@@ -3,7 +3,7 @@ description: Sync and show current work items from Tracker
 argument-hint: Optional queue filter (e.g., PM, LUMI)
 ---
 
-# /my-work — Sync Current Work
+# /sync — Sync Current Work
 
 ## Steps
 

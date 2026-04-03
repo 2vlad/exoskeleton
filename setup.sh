@@ -102,5 +102,5 @@ echo "  1. Откройте эту папку в VS Code с Yandex Code Assistan
 echo "  2. Заполните brain/control/role.md — ваша роль"
 echo "  3. Заполните brain/control/week.md — фокус недели"
 echo "  4. Запустите /tool-calibrate в агенте"
-echo "  5. Попробуйте /my-work"
+echo "  5. Попробуйте /sync"
 echo ""

@@ -1,6 +1,6 @@
 # Active Work
 
-_No data yet. Run `/my-work` to sync your issues from Tracker._
+_No data yet. Run `/sync` to sync your issues from Tracker._
 
 ## Sync Freshness
 

@@ -1,6 +1,6 @@
 # Role
 
-<!-- Fill in your current role. This is read by /brief and /my-work. -->
+<!-- Fill in your current role. This is read by /brief and /sync. -->
 
 _Not configured. Example:_
 

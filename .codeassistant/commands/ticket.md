@@ -1,9 +1,9 @@
 ---
-description: Build issue dossier from Tracker and related context
-argument-hint: Issue key (e.g., PM-123)
+description: Build ticket dossier from Tracker and related context
+argument-hint: Ticket key (e.g., PM-123)
 ---
 
-# /issue — Issue Dossier
+# /ticket — Ticket Dossier
 
 ## Steps
 

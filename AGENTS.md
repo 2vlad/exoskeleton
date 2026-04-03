@@ -46,8 +46,9 @@ If `scripts/bootstrap.py` fails (no arc token, login not in Staff), tell the use
 ## Available commands
 
 - `/brief` — daily summary
-- `/my-work` — sync and show current issues
-- `/issue <key>` — issue dossier
+- `/sync` — sync and show current issues
+- `/ticket <key>` — ticket dossier
+- `/agenda` — suggest agenda for next 2 calls
 - `/remember <fact>` — store a note
 - `/tool-calibrate` — calibrate query recipes
 
