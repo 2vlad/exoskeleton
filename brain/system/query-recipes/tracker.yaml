@@ -73,3 +73,43 @@ recipes:
     calibrated: false
     last_successful_call: null
     example_response: null
+
+  issue_comments:
+    description: "Fetch comments for a specific issue"
+    primary_tool: tracker.GetComments
+    args_template:
+      issue_key: "{issue_key}"
+    validate:
+      require_fields: [id, text, createdAt, createdBy]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  issue_links:
+    description: "Fetch linked issues (blocks, depends, relates)"
+    primary_tool: tracker.GetLinks
+    args_template:
+      issue_key: "{issue_key}"
+    validate:
+      require_fields: [direction, type, issue_key]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  goals_hierarchy:
+    description: "Fetch goals tree: year → quarter → sprint for user's queues"
+    primary_tool: tracker.GetGoals
+    args_template:
+      filter:
+        queue: "{default_queues}"
+      expand: "children"
+    fallbacks:
+      - tool: tracker.SearchEntities
+        args_template:
+          query: "queue:{default_queues_joined} type:goal"
+          entity_type: "goal"
+    validate:
+      require_fields: [key, summary, type]
+    calibrated: false
+    last_successful_call: null
+    example_response: null

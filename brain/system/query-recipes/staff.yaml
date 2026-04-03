@@ -1,0 +1,26 @@
+recipes:
+  person_info:
+    description: "Fetch person info from Staff API (name, position, department, status)"
+    primary_tool: staff.GetPerson
+    args_template:
+      login: "{person_login}"
+      fields: "login,name,department_group.name,official.position,official.is_dismissed,gap.current"
+    validate:
+      require_fields: [login, name]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+    note: "Can also be called via scripts/bootstrap.py --login {person_login}"
+
+  team_members:
+    description: "List members of a department or team"
+    primary_tool: staff.GetPersons
+    args_template:
+      department: "{department_name}"
+      fields: "login,name,official.position"
+      limit: 50
+    validate:
+      require_fields: [login, name]
+    calibrated: false
+    last_successful_call: null
+    example_response: null

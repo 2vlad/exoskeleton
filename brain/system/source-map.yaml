@@ -5,9 +5,15 @@ authority:
   issue_status: tracker
   issue_assignee: tracker
   issue_history: tracker
+  issue_comments: tracker
+  issue_links: tracker
   project_goal_meta: tracker
+  goal_hierarchy: tracker
   document_snippets: intrasearch
   wiki_content: intrasearch
+  calendar_events: calendar
+  person_info: staff
+  org_structure: staff
   broad_internal_context: deepagent
   data_schema: yt
   data_path_existence: yt
@@ -16,6 +22,8 @@ authority:
 
 trust_order:
   - tracker
+  - calendar
+  - staff
   - yt
   - infractl
   - intrasearch

@@ -1,0 +1,25 @@
+recipes:
+  upcoming_events:
+    description: "Fetch user's calendar events for today and tomorrow"
+    primary_tool: calendar.GetEvents
+    args_template:
+      login: "{tracker_login}"
+      from: "{today}"
+      to: "{tomorrow_end}"
+      limit: 20
+    validate:
+      require_fields: [id, name, start, end]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  event_details:
+    description: "Fetch details for a specific calendar event (attendees, description)"
+    primary_tool: calendar.GetEvent
+    args_template:
+      event_id: "{event_id}"
+    validate:
+      require_fields: [id, name, attendees]
+    calibrated: false
+    last_successful_call: null
+    example_response: null

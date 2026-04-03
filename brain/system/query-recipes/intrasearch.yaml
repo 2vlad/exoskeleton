@@ -34,3 +34,27 @@ recipes:
     calibrated: false
     last_successful_call: null
     example_response: null
+
+  wiki_by_issue:
+    description: "Find wiki pages related to a tracker issue"
+    primary_tool: intrasearch.search
+    args_template:
+      query: "{issue_key} {issue_summary}"
+      limit: 10
+    validate:
+      require_fields: [title, url, snippet]
+    calibrated: false
+    last_successful_call: null
+    example_response: null
+
+  wiki_by_project:
+    description: "Find wiki pages for a project or product area"
+    primary_tool: intrasearch.search
+    args_template:
+      query: "{project_name} wiki"
+      limit: 15
+    validate:
+      require_fields: [title, url, snippet]
+    calibrated: false
+    last_successful_call: null
+    example_response: null

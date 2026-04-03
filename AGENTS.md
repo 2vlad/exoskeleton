@@ -11,6 +11,7 @@ Your operational memory is stored in `brain/system/`. Read it before every task.
 4. **DeepAgent is discovery only.** Never treat DeepAgent output as authoritative for issue status, assignees, or project metadata.
 5. **Never choose destination files freely.** Record routing is schema-driven — see `scripts/routing.py`.
 6. **Read `brain/system/identities.yaml` before any personalized query.** You need to know who the user is.
+   - For org context, also consult `brain/system/org_structure.md` — who leads which team, who reports to whom.
 7. **Prefer canonical sources.** See `brain/system/source-map.yaml` for which source is authoritative for which fact type.
 8. **Low confidence → inbox.** Uncertain extractions go to `brain/views/inbox.md`, not into canonical views.
 

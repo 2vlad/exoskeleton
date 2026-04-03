@@ -15,9 +15,10 @@ argument-hint: Optional — person name or meeting topic to filter
 6. Read `brain/ledger/notes.jsonl` — recent notes that mention meetings or people.
 7. If the user specified a person or topic, filter context to that scope.
 8. Identify the 2 nearest upcoming calls:
-   a. Look for commitments/notes mentioning meetings, syncs, stand-ups, 1:1s.
-   b. Check entity_refs for people involved.
-   c. If calendar data is not available, ask the user who the next 2 calls are with.
+   a. Check `brain/ledger/notes.jsonl` for `kind: "calendar_event"` entries (synced from calendar).
+   b. If no calendar events found, try recipe `upcoming_events` from `calendar.yaml`.
+   c. If calendar MCP is not available, ask the user who the next 2 calls are with.
+   d. For each call, look up attendees in `brain/system/org_structure.md` to understand their role/team.
 9. For each call, generate an agenda:
    - **Topics to raise** — blocked issues, decisions needed, status updates relevant to attendees.
    - **Questions to ask** — open items where attendees have context.
