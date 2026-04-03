@@ -12,7 +12,7 @@ echo ""
 
 read -p "Ваше имя (как в Staff, напр. Иван Петров): " DISPLAY_NAME
 read -p "Логин (напр. ivpetrov): " LOGIN
-read -p "Рабочий email (напр. ivpetrov@yandex-team.ru): " EMAIL
+EMAIL="${LOGIN}@yandex-team.ru"
 read -p "Команда (напр. practicum): " TEAM
 read -p "Очереди трекера через запятую (напр. PRACT,LUMI): " QUEUES_RAW
 
