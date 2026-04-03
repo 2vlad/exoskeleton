@@ -18,9 +18,11 @@ if [ ! -f "$ARC_TOKEN_FILE" ]; then
 fi
 ARC_TOKEN=$(cat "$ARC_TOKEN_FILE")
 
-# --- Логин ---
+# --- Логин (по умолчанию — системный $USER) ---
 
-read -p "Логин (напр. ivpetrov): " LOGIN
+DEFAULT_LOGIN="$USER"
+read -p "Логин [$DEFAULT_LOGIN]: " LOGIN
+LOGIN="${LOGIN:-$DEFAULT_LOGIN}"
 
 # --- Подтягиваем данные из Staff API ---
 
