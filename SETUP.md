@@ -1,4 +1,4 @@
-# Настройка PM Copilot Exoskeleton
+# Настройка Exoskeleton
 
 ## Что нужно заранее
 
@@ -9,8 +9,8 @@
 ## Установка
 
 ```bash
-git clone https://github.com/2vlad/exoskeleton.git pm-copilot
-cd pm-copilot
+git clone https://github.com/2vlad/exoskeleton.git
+cd exoskeleton
 ./setup.sh
 ```
 
@@ -25,7 +25,7 @@ cd pm-copilot
 
 ## После установки
 
-1. Откройте папку `pm-copilot` в VS Code
+1. Откройте папку `exoskeleton` в VS Code
 2. Убедитесь, что в настройках YCA подключены MCP-серверы: tracker, intrasearch, deepagent
 3. Запустите в агенте: `/tool-calibrate` — проверит подключение к инструментам
 4. Попробуйте: `/my-work` — покажет ваши тикеты

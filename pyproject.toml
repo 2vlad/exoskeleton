@@ -1,7 +1,7 @@
 [project]
-name = "pm-copilot-yca"
+name = "exoskeleton"
 version = "0.1.0"
-description = "PM Copilot Exoskeleton for Yandex Code Assistant"
+description = "Exoskeleton for Yandex Code Assistant"
 requires-python = ">=3.11"
 dependencies = [
     "pyyaml>=6.0",

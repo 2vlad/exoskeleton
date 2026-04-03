@@ -1,11 +1,11 @@
 #!/bin/bash
-# Настройка PM Copilot Exoskeleton
+# Настройка Exoskeleton
 # Запустите один раз после клонирования: ./setup.sh
 
 set -e
 
 echo ""
-echo "=== PM Copilot — настройка ==="
+echo "=== Exoskeleton — настройка ==="
 echo ""
 
 # --- Сбор данных ---

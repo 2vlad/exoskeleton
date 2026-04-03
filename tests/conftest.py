@@ -1,4 +1,4 @@
-"""Shared pytest fixtures for PM Copilot tests."""
+"""Shared pytest fixtures for Exoskeleton tests."""
 import json
 from pathlib import Path
 
